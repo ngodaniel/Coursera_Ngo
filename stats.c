@@ -41,16 +41,18 @@ void main() {
 }
 /* Add other Implementation File Code Here */
 
-void print_statistics(char test[]){
-	//find minimum value within array
-	int min_val = test[0];
-	for (int i = 1; i < sizeof(test); i++){
-		if(test[i] < min_val){
-			min_val = test[i];
-		}
-		else{
-			min_val = min_val;
-		}
-	}
-	printf("%d",min_val);
-}
+print_statistics(){}
+
+print_array(){}
+
+find_median(){}
+
+find_mean(){}
+
+find_maximum(){}
+
+find_minimum(){}
+
+sort_array(){}
+
+

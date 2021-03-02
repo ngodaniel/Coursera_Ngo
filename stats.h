@@ -22,7 +22,19 @@
 #define __STATS_H__
 
 /* Add Your Declarations and Function Comments here */ 
+print_statistics();
 
+print_array();
+
+find_median();
+
+find_mean();
+
+find_maximum();
+
+find_minimum();
+
+sort_array();
 /**
  * @brief <Add Brief Description of Function Here>
  *
