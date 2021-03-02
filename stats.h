@@ -22,19 +22,19 @@
 #define __STATS_H__
 
 /* Add Your Declarations and Function Comments here */ 
-print_statistics();
+void print_statistics();
 
-print_array();
+void print_array(unsigned char test[]);
 
-find_median();
+int find_median();
 
-find_mean();
+int find_mean();
 
-find_maximum();
+int find_maximum();
 
-find_minimum();
+int find_minimum();
 
-sort_array();
+void sort_array();
 /**
  * @brief <Add Brief Description of Function Here>
  *

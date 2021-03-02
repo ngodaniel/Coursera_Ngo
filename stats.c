@@ -27,6 +27,13 @@
 /* Size of the Data Set */
 #define SIZE (40)
 
+void print_array(unsigned char test[]){
+	for(int i = 0; i < SIZE; i++){
+		printf("%d ",test[i]);
+	}
+	printf("\n");
+}	
+
 void main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
@@ -37,22 +44,8 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-  print_statistics(test[SIZE]);
+  print_array(test);
 }
 /* Add other Implementation File Code Here */
-
-print_statistics(){}
-
-print_array(){}
-
-find_median(){}
-
-find_mean(){}
-
-find_maximum(){}
-
-find_minimum(){}
-
-sort_array(){}
 
 
