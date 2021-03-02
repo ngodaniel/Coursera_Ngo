@@ -22,6 +22,7 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "stats.h"
 
 /* Size of the Data Set */
@@ -32,7 +33,22 @@ void print_array(unsigned char test[]){
 		printf("%d ",test[i]);
 	}
 	printf("\n");
-}	
+}
+	
+
+void sort_array(unsigned char test[], int n){
+	int temp;
+	for (int i = 0; i < n-1; i++){
+		for (int j = i + 1 ;j < n; j++){ 
+			if(test[j] < test[i]){
+				temp = test[j];
+				test[j] = test[i];
+				test[i] = temp;
+			}
+		}
+	}
+	
+}
 
 void main() {
 
@@ -44,6 +60,8 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+  print_array(test);
+  sort_array(test,SIZE);
   print_array(test);
 }
 /* Add other Implementation File Code Here */

@@ -34,7 +34,8 @@ int find_maximum();
 
 int find_minimum();
 
-void sort_array();
+void sort_array(unsigned char test[], int n);
+
 /**
  * @brief <Add Brief Description of Function Here>
  *
