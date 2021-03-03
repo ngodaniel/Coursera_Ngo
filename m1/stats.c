@@ -58,6 +58,14 @@ double find_median(unsigned char test[], int n){
 		return test[n/2];
 }
 
+int find_mean(unsigned char test[], int n){
+	int total = 0;
+	for (int i = 0; i < n; i++){
+		total += test[i];
+	}
+	return total/n;
+}
+
 void main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
@@ -70,6 +78,7 @@ void main() {
   /* Statistics and Printing Functions Go Here */
   print_array(test);
   printf("Median: %f\n",find_median(test,SIZE));
+  printf("Mean: %d\n", find_mean(test,SIZE));
 }
 /* Add other Implementation File Code Here */
 

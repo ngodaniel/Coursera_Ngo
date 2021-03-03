@@ -24,9 +24,9 @@ void print_statistics();
 
 void print_array(unsigned char test[]);
 
-double find_median();
+double find_median(unsigned char test[], int n);
 
-int find_mean();
+int find_mean(unsigned char test[], int n);
 
 int find_maximum();
 
