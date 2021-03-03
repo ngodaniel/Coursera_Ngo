@@ -50,6 +50,14 @@ void sort_array(unsigned char test[], int n){
 	
 }
 
+double find_median(unsigned char test[], int n){
+	sort_array(test,n);
+	if (n%2 == 0)
+		return (test[n/2]+test[(n/2)-1])/2;
+	else
+		return test[n/2];
+}
+
 void main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
@@ -61,8 +69,7 @@ void main() {
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
   print_array(test);
-  sort_array(test,SIZE);
-  print_array(test);
+  printf("Median: %f\n",find_median(test,SIZE));
 }
 /* Add other Implementation File Code Here */
 

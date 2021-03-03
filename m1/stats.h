@@ -9,13 +9,11 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h 
+ * @brief Header File for stats.c
  *
- * <Add Extended Description Here>
- *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Daniel Ngo
+ * @date March 1, 2021
  *
  */
 #ifndef __STATS_H__
@@ -26,7 +24,7 @@ void print_statistics();
 
 void print_array(unsigned char test[]);
 
-int find_median();
+double find_median();
 
 int find_mean();
 
