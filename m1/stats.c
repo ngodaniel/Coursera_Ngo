@@ -66,6 +66,16 @@ int find_mean(unsigned char test[], int n){
 	return total/n;
 }
 
+int find_minimum(unsigned char test[], int n) {
+	sort_array(test,n);
+	return test[0];
+}
+
+int find_maximum(unsigned char test[], int n) {
+	sort_array(test,n);
+	return test[n-1];
+}
+
 void main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
@@ -79,6 +89,8 @@ void main() {
   print_array(test);
   printf("Median: %f\n",find_median(test,SIZE));
   printf("Mean: %d\n", find_mean(test,SIZE));
+  printf("Minimum: %d\n", find_minimum(test,SIZE));
+  printf("Maximum: %d\n", find_maximum(test,SIZE));
 }
 /* Add other Implementation File Code Here */
 

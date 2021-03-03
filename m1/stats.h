@@ -28,21 +28,23 @@ double find_median(unsigned char test[], int n);
 
 int find_mean(unsigned char test[], int n);
 
-int find_maximum();
+int find_maximum(unsigned char test[], int n);
 
-int find_minimum();
+int find_minimum(unsigned char test[], int n);
 
 void sort_array(unsigned char test[], int n);
 
 /**
  * @brief <Add Brief Description of Function Here>
  *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * print_statistics() displays output of all other functions
+ * print_array() prints out entire array
+ * find_median() calculates median of passed array
+ * find_mean() calculates the mean of the passed array
+ * find_maximum() & find_minimum() finds the maximum and minimum values within the passed array
+ * sort_array() sorts the passed array in ascending order
+ * @param unsigned char test[] array to be passed
+ * @param int n array size 
  *
  * @return <Add Return Informaiton here>
  */
