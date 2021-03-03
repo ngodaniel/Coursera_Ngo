@@ -76,6 +76,18 @@ int find_maximum(unsigned char test[], int n) {
 	return test[n-1];
 }
 
+void print_statistics(unsigned char test[], int n){
+	printf("Unsorted: \n");
+ 	print_array(test);
+	sort_array(test, n);
+	printf("Sorted: \n");
+	print_array(test);
+	printf("Median: %f\n", find_median(test,n));
+	printf("Mean: %d\n", find_mean(test,n));
+	printf("Minimum: %d\n", find_minimum(test,n));
+	printf("Maximum: %d\n", find_maximum(test,n));
+}
+
 void main() {
 
   unsigned char test[SIZE] = { 34, 201, 190, 154,   8, 194,   2,   6,
@@ -86,11 +98,7 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-  print_array(test);
-  printf("Median: %f\n",find_median(test,SIZE));
-  printf("Mean: %d\n", find_mean(test,SIZE));
-  printf("Minimum: %d\n", find_minimum(test,SIZE));
-  printf("Maximum: %d\n", find_maximum(test,SIZE));
+  print_statistics(test,SIZE);
 }
 /* Add other Implementation File Code Here */
 
